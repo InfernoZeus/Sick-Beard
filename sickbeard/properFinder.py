@@ -54,10 +54,10 @@ class ProperFinder():
         hourDiff = datetime.datetime.today().time().hour - updateTime.hour
 
         # if it's less than an interval after the update time then do an update
-        if hourDiff >= 0 and hourDiff < self.updateInterval.seconds / 3600:
-            logger.log(u"Beginning the search for new propers")
-        else:
-            return
+        #if hourDiff >= 0 and hourDiff < self.updateInterval.seconds / 3600:
+        logger.log(u"Beginning the search for new propers")
+        #else:
+            #return
 
         propers = self._getProperList()
 
